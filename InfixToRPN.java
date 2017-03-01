@@ -1,4 +1,4 @@
-package uk.ac.cam.si310.supervision3;
+package yourpackage;
 
 import java.util.ArrayList;
 import java.util.Stack;
@@ -78,26 +78,6 @@ public class InfixToRPN {
 				output.add(token);
 
 		}
-
-		// for (String token : tokens) {
-		//
-		// if (isOperator(token)) {
-		// while (!stack.empty() && isOperator(stack.peek())
-		// && getPrecedence(token) <= getPrecedence(stack.peek())) {
-		// output.add(stack.pop());
-		// }
-		//
-		// stack.push(token);
-		// } else if (token.equals("(")) {
-		// stack.push(token);
-		// } else if (token.equals(")")) {
-		// while (!stack.empty() && !(stack.peek().equals("("))) {
-		// output.add(stack.pop());
-		// }
-		// stack.pop();
-		// } else
-		// output.add(token);
-		// }
 
 		while (!stack.empty())
 			output.add(stack.pop());
